@@ -37,5 +37,34 @@ class Page1Screen extends StatelessWidget {
             ],
           ),
         ),
+
+// add bottom navigation bar buttons
+        bottomNavigationBar: BottomNavigationBar(
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: 'Home',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.business),
+              label: 'Page 2',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.school),
+              label: 'Page 3',
+            ),
+          ],
+          currentIndex: 0,
+          selectedItemColor: Colors.amber[800],
+          onTap: (int index) {
+            if (index == 0) {
+              context.go('/');
+            } else if (index == 1) {
+              context.go('/page2');
+            } else if (index == 2) {
+              context.go('/page3');
+            }
+          },
+        ),
       );
 }
