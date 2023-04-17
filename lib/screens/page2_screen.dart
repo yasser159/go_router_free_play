@@ -8,7 +8,7 @@ class Page2Screen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-        appBar: AppBar(title: const Text(MyApp.title)),
+        appBar: AppBar(title: const Text("Payment form Screen")),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

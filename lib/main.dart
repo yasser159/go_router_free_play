@@ -12,7 +12,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  static const String title = 'GoRouter Routes';
+  static const String title = 'HandyChan';
 
   // This widget is the root of your application.
   @override
